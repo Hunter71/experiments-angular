@@ -35,6 +35,10 @@ p {
   flex: 1;
 }
 
+.space_after {
+  margin-right: 10px;
+}
+
 .toolbar {
   position: absolute;
   top: 0;
