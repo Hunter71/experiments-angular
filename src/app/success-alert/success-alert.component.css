@@ -1,4 +1,4 @@
 .alert {
-  color: limegreen;
-  font-size: 20px;
+  background: palegreen;
+  border: 1px solid green;
 }
