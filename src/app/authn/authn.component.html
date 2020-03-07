@@ -16,16 +16,11 @@
   </button>
 
   <div
-    [hidden]="registeredActionProcessed"
-    class="alert alert-info"
-    role="alert"
-  >
-    <p [innerText]="registeredUserStatus"></p>
-  </div>
-
-  <div
-    [hidden]="!registeredActionProcessed"
-    class="alert alert-success"
+    [ngClass]="{
+      'alert-info': !registeredActionProcessed,
+      'alert-success': registeredActionProcessed
+    }"
+    class="alert"
     role="alert"
   >
     <p [innerText]="registeredUserStatus"></p>
