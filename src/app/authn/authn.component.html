@@ -1,0 +1,33 @@
+<div class="col-xs-12">
+  <h4>Registration</h4>
+  <hr>
+  <input
+    [(ngModel)]="username"
+    class="form-control"
+    type="text"
+  >
+
+  <button
+    [disabled]="!canRegisterUser()"
+    (click)="registerUser()"
+    class="btn btn-primary"
+  >
+    Subscribe
+  </button>
+
+  <div
+    [hidden]="registeredActionProcessed"
+    class="alert alert-info"
+    role="alert"
+  >
+    <p [innerText]="registeredUserStatus"></p>
+  </div>
+
+  <div
+    [hidden]="!registeredActionProcessed"
+    class="alert alert-success"
+    role="alert"
+  >
+    <p [innerText]="registeredUserStatus"></p>
+  </div>
+</div>
