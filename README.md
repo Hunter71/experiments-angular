@@ -1,4 +1,6 @@
-# FirstApp
+# Experiments Angular
+
+This is my first Angular application based on tutorial from Udemy course "Angular - The Complete Guide"
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
