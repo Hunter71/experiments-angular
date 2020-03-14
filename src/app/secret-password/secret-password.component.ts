@@ -3,14 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-secretpass',
   templateUrl: './secret-password.component.html',
-  styleUrls: ['./secret-password.component.css']
+  styleUrls: ['secret-password.component.css']
 })
 export class SecretPasswordComponent implements OnInit {
-  secretPassword = 'Ola';
+  secretPassword: string;
   secretPasswordVisible = false;
-  secretPasswordDisplayRegister: string[] = [];
+  secretPasswordDisplayRegister: string[];
 
-  constructor() { }
+  constructor() {
+    this.secretPassword = 'Ola';
+    this.secretPasswordDisplayRegister = [];
+  }
 
   ngOnInit(): void {
   }

@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./authn.component.css']
 })
 export class AuthnComponent implements OnInit {
-  registeredActionProcessed = false;
-  registeredUserStatus = 'No user registered';
+  registeredActionProcessed: boolean;
+  registeredUserStatus: string;
   username: string;
 
   constructor() {
+    this.registeredActionProcessed = false;
+    this.registeredUserStatus = 'No user registered';
     this.clearUsername();
   }
 

@@ -1,6 +1,4 @@
 <div class="col-xs-12">
-  <h4>Add Server</h4>
-  <hr>
   <label for="serverName">ServerName</label>
   <input
     [(ngModel)]="serverName"
@@ -8,6 +6,9 @@
     id="serverName"
     type="text"
   >
+
+  <div class="spacing"></div>
+
   <button
     (click)="onCreateServer()"
     [disabled]="!allowNewServer"
@@ -15,9 +16,14 @@
   >
     Add Server
   </button>
+
+  <div class="spacing"></div>
+
   <p *ngIf="serverCreationStatus; else noServer" [innerText]="serverCreationStatus"></p>
+
   <ng-template #noServer>
     <p>No server was created!</p>
   </ng-template>
+
   <app-server *ngFor="let server of servers"></app-server>
 </div>

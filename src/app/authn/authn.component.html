@@ -1,11 +1,13 @@
 <div class="col-xs-12">
-  <h4>Registration</h4>
-  <hr>
+  <label for="username">Username</label>
   <input
     [(ngModel)]="username"
     class="form-control"
     type="text"
+    id="username"
   >
+
+  <div class="spacing"></div>
 
   <button
     [disabled]="!canRegisterUser()"
@@ -14,6 +16,8 @@
   >
     Subscribe
   </button>
+
+  <div class="spacing"></div>
 
   <div
     [ngClass]="{
